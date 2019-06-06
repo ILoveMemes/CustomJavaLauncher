@@ -1,0 +1,6 @@
+g++ -static -static-libgcc -static-libstdc++ src\main.cpp src\tinyxml2.cpp -o bin\xmltest.exe
+g++ src\main.cpp -o bin\script_launcher.exe -Wl,--subsystem,windows -finput-charset=utf-8 -fexec-charset=cp1251
+g++ src\main.cpp -o bin\script_launcher.exe -static -static-libgcc -static-libstdc++
+
+g++ src\JavaLauncher.cpp -o bin\launcher.exe -Wl,--subsystem,windows -static -static-libgcc -static-libstdc++
+g++ src\main.cpp -o bin\script_launcher.exe -Wl,--subsystem,windows -static -static-libgcc -static-libstdc++
